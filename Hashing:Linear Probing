@@ -1,0 +1,12 @@
+input_list=list(map(int,input().split()))
+n=len(input_list)
+hash_list=[False]*n
+for i in input_list:
+    h_k=i%n
+    for j in range(0,len(hash_list)):
+        h1_k=(h_k+j)%n
+        if hash_list[h1_k]==False:
+            hash_list[h1_k]=i
+            break
+print(hash_list)
+        
