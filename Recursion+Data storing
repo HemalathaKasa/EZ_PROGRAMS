@@ -1,0 +1,7 @@
+p=[5,10,15,7,8,9,4]
+w=[1,3,5,4,1,3,2]
+c=15
+n=len(p)
+DP=[[-1 for i in range(c+1)]for j in range(n+1)]
+print(DP)
+print(calc_max(p,w,c,n))
