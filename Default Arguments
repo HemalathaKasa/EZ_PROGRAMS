@@ -1,0 +1,7 @@
+##default arguments
+
+def myself(name,age=24):
+    print(name)
+    print(age)
+    return none
+myself("Hema",age=24)
