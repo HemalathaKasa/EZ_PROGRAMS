@@ -1,0 +1,13 @@
+class Student:
+    def __init__(self,name,usn,marks):
+        self.name=nm
+        self.usn=usn
+        self.marks=m
+Student1=Student
+nm=input("enter  the name:")
+usn=input("enter the usn:")
+
+for i in range(5):
+    m=(input("enter subjects:"))
+    p=int(input("enter percentage:"))
+    g=int(m=int(input("enter grades:")))
