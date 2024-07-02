@@ -1,0 +1,42 @@
+def merge(l,low,mid,high,temp):
+    ls=mid-low+1
+    rs=high-mid
+    left=right=[]
+    for i in range(ls):
+        left.append(l[low+i])
+    for i in range(rs):
+        right.append(l[mid+1+i])
+    left=l[low:mid]
+    right=l[mid:high+1]
+    i=j=t=0
+    
+    while i<len(left) and  j<len(right):
+        if left[i]<right[j]:
+            temp[t]=left[i]
+            i+=1
+            t+=1
+        else:
+            temp[t]=right[j]
+            j+=1
+            t+=1
+        while i<len(left):
+            temp[t]=left[i]
+            i+=1
+            t+=1
+        while i<len(right):
+            temp[t]=right[i]
+            j+=1
+            t+=1
+def mergesort(l,low,high):
+    if low<high:
+        mid=low+(high-low)//2
+        mergesort(l,low,mid,temp)
+        mergesort(l,mid+1,high,temp)
+        merge(l,low,mid,high,temp)
+if __name__=="__main__":
+    l=list(map(int,input().split()))
+    low=0
+    high=len(L)-1
+    quick_sort(l,low,high)
+    print("sorted array=",l)
+            
