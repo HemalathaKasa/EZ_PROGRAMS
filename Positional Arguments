@@ -1,0 +1,7 @@
+##1.positional arguments
+def sumOfNumbers(a,b):
+    print(a)
+    print(b)
+    return(a+b)
+c=sumOfNumbers(10,20)
+print(c)
