@@ -1,0 +1,15 @@
+#Ascending order:
+def print_num(n):
+    if n<10:
+        print(n)
+        print_num(n+1)
+print_num(0)
+
+
+
+# Descending order:
+def print_num(n):
+    if n<10:
+        print_num(n+1)
+        print(n)
+print_num(0)
